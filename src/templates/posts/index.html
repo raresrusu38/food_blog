@@ -323,7 +323,7 @@
                     <!-- Blog Content -->
                     <div class="blog-content">
                         <a href="#" class="post-tag">The Best</a>
-                        <a href="#" class="post-title">{{ post.title }}</a>
+                        <a href="{% url 'posts:post-detail' pk=post.pk %}" class="post-title">{{ post.title }}</a>
                         <div class="post-meta">
                             <a href="#" class="post-date">{{ post.publishing_date }}</a>
                             <a href="#" class="post-author">By {{ post.user.username }}</a>
