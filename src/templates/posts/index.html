@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load custom_tags %}
 
 {% block content %}
 <!-- ##### Treading Post Area Start ##### -->
@@ -342,13 +343,15 @@
                     <div class="single-widget-area post-widget">
                         <h5 class="title-bueno"><span class="ml-1">Categories</span></h5>
                         <ul class="list-group list-group-flush">
-                    
+                            {% categories as categories %}
+                            {% for category in categories %}
                             <a href="#">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Cras justo odio
-                                    <span class="badge badge-bueno badge-pill">14</span>
+                                    {{ category.title }}
+                                    <span class="badge badge-bueno badge-pill">{{ category.post_count }}</span>
                                 </li>
                             </a>
+                            {% endfor %}
                         </ul>
                     </div>
 
