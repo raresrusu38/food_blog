@@ -1647,5 +1647,19 @@ h3 {
         height: 300px; } }
 
 /* ====== The End ====== */
-
+/* Custom CSS */
+.badge-bueno {
+    background-color: #b0c364;
+    color: #ffffff;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.list-group-item {
+    padding: 0.5rem 0.25rem;
+}
+h5.title-bueno {
+  border-left: 5px solid #b0c364;
+}
 /*# sourceMappingURL=style.css.map */
