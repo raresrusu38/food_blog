@@ -202,7 +202,7 @@
 </div>
 <!-- ##### Hero Area End ##### -->
 
-<!-- ##### Catagory Area Start ##### -->
+<!-- ##### Category Area Start ##### -->
 <div class="post-catagory section-padding-100-0 mb-70">
     <div class="container">
         <div class="row justify-content-center">
@@ -345,7 +345,7 @@
                         <ul class="list-group list-group-flush">
                             {% categories as categories %}
                             {% for category in categories %}
-                            <a href="#">
+                            <a href="{% url 'posts:category-detail' pk=category.pk slug=category.slug %}">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     {{ category.title }}
                                     <span class="badge badge-bueno badge-pill">{{ category.post_count }}</span>
